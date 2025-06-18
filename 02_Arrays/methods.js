@@ -5,3 +5,13 @@ function print(n) {
 }
 // print("owais");
 students.forEach(print);
+
+//map method
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+function double(num){
+    return num*2
+}
+let newArr = numbers.map(double);
+console.log(newArr);
+//you can print old arrays as well, map helpsd to manuplate or modifies the array and returns new array
+console.log(numbers);   
