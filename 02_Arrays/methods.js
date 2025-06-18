@@ -28,16 +28,24 @@ let show = names.find((name) => name === "owais");
 console.log(show); 
 
 //findIndex method --- helps to find a index
+
 const numbr = [1, 2, 3, 4, 5, 6, 7, 8];
 let findNum = numbr.findIndex((num) => num === 4);
 console.log([findNum]);
 
 //filter method
+
 const numbrr =  [1, 2, 3, 4, 5, 6, 7, 8];
 let evenNum = numbrr.filter((num)=> num % 2 === 0); //compare num with 2 if returns 0 then true
 console.log(evenNum);
 
 //slice method ---it excludes starts and last index , it takes in beteen value
+
 const numberss = [1, 2, 3, 4, 5, 6, 7, 8];
-let a = numberss.slice(2, 6); //
-console.log(`this is part that i need`, a)
+let a = numberss.slice(2, 6);             //[ 3, 4, 5, 6 ]
+let b = numberss.slice(6);                //[ 7, 8 ]
+let c = numberss.slice(2);                //[ 3, 4, 5, 6, 7, 8 ]
+console.log(`This is part that i need`, a)
+console.log(`Starts from 6th index`, b)
+console.log(`Starts from 2nd index`, c)
+
