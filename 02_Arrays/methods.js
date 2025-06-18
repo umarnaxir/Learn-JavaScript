@@ -49,3 +49,9 @@ console.log(`This is part that i need`, a)
 console.log(`Starts from 6th index`, b)
 console.log(`Starts from 2nd index`, c)
 
+//splice method --- it removes perticular numbers from the array and returns new array with modifications
+
+const number1 = ["a", "b", "c", "d", "e", "f", "g", "h"];
+let d = number1.splice(1,4);
+console.log(`This is splice part`, d);
+console.log(`splice items are removed from array`, number1);
