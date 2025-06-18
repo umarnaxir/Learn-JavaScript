@@ -1,4 +1,5 @@
 //forEach Method
+
 const students = ["umar", "khalid", "owais", "waseem"];
 function print(n) {
   console.log(n);
@@ -6,8 +7,8 @@ function print(n) {
 // print("owais");
 students.forEach(print);
 
-//map method --- you can print old arrays as well,
-// map helpsd to manuplate or modifies the array and returns new array
+//map method --- you can print old arrays as well, map helpsd to manuplate or modifies the array and returns new array
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 function double(num){
     return num*2
@@ -24,4 +25,9 @@ console.log(ans);
 
 const names = ["umar", "owais", "waseem"];
 let show = names.find((name) => name === "owais");
-console.log(show);
+console.log(show); 
+
+//findIndex method --- helps to find a index
+const numbr = [1, 2, 3, 4, 5, 6, 7, 8];
+let findNum = numbr.findIndex((num) => num === 4);
+console.log([findNum]);
