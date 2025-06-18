@@ -26,6 +26,6 @@ let countEven = 0;
 for(let i = 0; i<numbers.length; i++){
     console.log(numbers[i]);
     if(numbers[i] % 2 === 0)
-        countEven ++
+    countEven ++
 }
 console.log("Total Even Numbers are",countEven);
