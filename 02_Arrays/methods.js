@@ -31,3 +31,8 @@ console.log(show);
 const numbr = [1, 2, 3, 4, 5, 6, 7, 8];
 let findNum = numbr.findIndex((num) => num === 4);
 console.log([findNum]);
+
+//filter method
+const numbrr =  [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNum = numbrr.filter((num)=> num % 2 === 0);
+console.log(evenNum);
