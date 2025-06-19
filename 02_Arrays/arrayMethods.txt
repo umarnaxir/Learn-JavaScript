@@ -1,0 +1,159 @@
+1️⃣ map()
+
+Purpose:
+Transforms each element of an array and returns a new array of the same length.
+
+Why use it?
+When you want to perform an operation on every item and get a new array with those results.
+
+Example:
+ 
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+2️⃣ filter
+
+Purpose:
+Filters out elements based on a condition and returns a new array of matching elements.
+
+Why use it?
+When you want only elements that meet a certain criteria.
+
+Example:
+const numbers = [1, 2, 3, 4, 5];
+const even = numbers.filter(num => num % 2 === 0);
+console.log(even); // [2, 4]
+
+3️⃣ find()
+
+Purpose:
+Finds the first element that matches a condition. Returns only one element or undefined.
+
+Why use it?
+When you only need one item, not an array.
+
+Example:
+const numbers = [1, 2, 3, 4, 5];
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven); // 2
+
+4️⃣ slice()
+Purpose:
+Returns a portion of an array without modifying the original array.
+
+Why use it?
+When you want to copy part of an array.
+
+Example:
+const fruits = ["apple", "banana", "cherry", "date"];
+const sliced = fruits.slice(1, 3);
+console.log(sliced); // ["banana", "cherry"]
+console.log(fruits); // original remains unchanged
+
+5️⃣ splice()
+
+Purpose:
+Changes the original array: it can add, remove, or replace elements.
+
+Why use it?
+When you want to directly modify an array.
+
+Example:
+const fruits = ["apple", "banana", "cherry", "date"];
+fruits.splice(2, 1, "mango"); // remove 1 item at index 2 and insert "mango"
+console.log(fruits); // ["apple", "banana", "mango", "date"]
+
+6️⃣ reduce()
+
+Purpose:
+Reduces array to a single value (number, string, object).
+
+Why use it?
+When you need to "sum up" or "accumulate" the array into one result.
+
+Example:
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum); // 15
+
+7️⃣ forEach()
+
+Purpose:
+Runs a function for each array element.
+
+Why use it?
+When you want to loop over the array for side effects (logging, DOM update), but you don’t need a new array.
+
+Example:
+const fruits = ["apple", "banana", "cherry"];
+fruits.forEach(fruit => console.log(fruit));
+// prints: apple banana cherry
+
+8️⃣ every()
+
+Purpose:
+Checks if all elements meet a condition. Returns true or false.
+
+Why use it?
+When you want to test if all items satisfy something.
+
+Example:
+const numbers = [2, 4, 6, 8];
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven); // true
+
+9️⃣ some()
+
+Purpose:
+Checks if at least one element meets a condition. Returns true or false.
+
+Why use it?
+When you want to test if any item satisfies something.
+
+Example:
+const numbers = [1, 3, 5, 8];
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven); // true
+
+🔟 sort()
+Purpose:
+Sorts array items (changes original array!).
+
+Why use it?
+When you want to order elements.
+
+Example:
+const numbers = [5, 1, 3, 4, 2];
+numbers.sort((a, b) => a - b); // ascending
+console.log(numbers); // [1, 2, 3, 4, 5]
+
+1️⃣1️⃣ concat()
+
+Purpose:
+Merges arrays and returns a new array.
+
+Why use it?
+When you want to combine arrays.
+
+Example:
+const a = [1, 2];
+const b = [3, 4];
+const merged = a.concat(b);
+console.log(merged); // [1, 2, 3, 4]
+
+
+
+| Method    | Returns New Array? | Modifies Original? | Purpose                     |
+| --------- | ------------------ | ------------------ | --------------------------- |
+| map()     | Yes                | No                 | Transform all items         |
+| filter()  | Yes                | No                 | Filter matching items       |
+| find()    | No (one item)      | No                 | Find first matching item    |
+| slice()   | Yes                | No                 | Get part of the array       |
+| splice()  | No (removed items) | Yes                | Add/remove/replace items    |
+| reduce()  | No (one value)     | No                 | Accumulate to single value  |
+| forEach() | No (undefined)     | No                 | Loop with side effects      |
+| every()   | No (true/false)    | No                 | Check if all meet condition |
+| some()    | No (true/false)    | No                 | Check if any meet condition |
+| sort()    | No (same array)    | Yes                | Sort array                  |
+| concat()  | Yes                | No                 | Merge arrays                |

@@ -21,11 +21,16 @@
 // }
 // console.log("Average of Numbers", avg)
 
-const numbers = [12, 7, 9, 24, 36, 5];
-let countEven = 0;
-for(let i = 0; i<numbers.length; i++){
-    console.log(numbers[i]);
-    if(numbers[i] % 2 === 0)
-    countEven ++
-}
-console.log("Total Even Numbers are",countEven);
+// const numbers = [12, 7, 9, 24, 36, 5];
+// let countEven = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+//   if (numbers[i] % 2 === 0) countEven++;
+// }
+// console.log("Total Even Numbers are", countEven);
+
+// const tasks = ["Wake up", "Exercise", "Work", "Sleep"];
+// for (i = 0; i < tasks.length; i++) {
+//   console.log((i + 1) + ". " + tasks[i]);
+// }
+
