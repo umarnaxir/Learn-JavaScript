@@ -34,3 +34,31 @@ function maxOfThree(a,b,c){
   return Math.max(a,b,c)
 }
 console.log(maxOfThree(10,20,30))
+
+//Example 4
+function a(day){
+  const days = day.toLowerCase()
+  switch(days){
+    case "monday":
+    return true;
+    break;
+    case "tuesday":
+    return true;
+    break;
+    case "wednesday":
+    return true;
+    break;
+    case "thursday":
+    return true;
+    break;
+    case "friday":
+    return true;
+    break;
+    case "saturday":
+    return true;
+    break;
+    default:
+    return false;
+  }
+}
+console.log(a("Monday"))
