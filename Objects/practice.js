@@ -91,3 +91,126 @@ const users = [
 ];
 const wajahat = users.find((name) => (name = wajahat));
 console.log(users);
+
+//How TO Access Objects and Arrays
+const classroom = {
+  students: [
+    { name: "Ali", age: 20 },
+    { name: "Umar", age: 22 }
+  ]
+};
+// Print Umar's age
+console.log(classroom.students[1].age)
+
+const orders = [
+  { id: 1, items: ["pen", "notebook"] },
+  { id: 2, items: ["eraser", "scale"] }
+];
+// Print the first item of the second order
+console.log(orders[1].items[0])
+
+const library = {
+  section: {
+    fiction: ["Book1", "Book2"],
+    nonFiction: ["Book3", "Book4"]
+  }
+};
+// Print Book3
+console.log(library.section.nonFiction[0])
+
+const user = {
+  name: "Sara",
+  posts: [
+    { title: "First Post", likes: 15 },
+    { title: "Second Post", likes: 30 }
+  ]
+};
+// Print the title of the second post
+console.log(user.posts[1].title)
+
+const cart = [
+  {
+    product: "Mouse",
+    details: {
+      price: 500,
+      quantity: 2
+    }
+  },
+  {
+    product: "Keyboard",
+    details: {
+      price: 800,
+      quantity: 1
+    }
+  }
+];
+// Print the quantity of Keyboard
+console.log(cart[1].details.quantity)
+
+const profile = {
+  name: "Zara",
+  contact: {
+    email: "zara@example.com",
+    address: {
+      city: "Delhi",
+      pincode: 110001
+    }
+  }
+};
+// Print the pincode
+console.log(profile.contact.address.pincode)
+
+const playlist = [
+  {
+    name: "Favorites",
+    songs: ["Song A", "Song B", "Song C"]
+  },
+  {
+    name: "Workout",
+    songs: ["Song X", "Song Y"]
+  }
+];
+// Print "Song Y"
+console.log(playlist[1].songs[1])
+
+const device = {
+  type: "Mobile",
+  specs: {
+    os: "Android",
+    features: {
+      bluetooth: true,
+      wifi: true
+    }
+  }
+};
+// Print whether it supports bluetooth
+console.log(device.specs.features.bluetooth)
+
+const travel = [
+  {
+    country: "India",
+    cities: ["Delhi", "Mumbai", "Srinagar"]
+  },
+  {
+    country: "USA",
+    cities: ["New York", "Los Angeles"]
+  }
+];
+// Print the third city of India
+console.log(travel[0].cities[2])
+
+const game = {
+  title: "Chess",
+  players: [
+    {
+      name: "Player1",
+      score: 120
+    },
+    {
+      name: "Player2",
+      score: 130
+    }
+  ]
+};
+// Print Player2's score
+console.log(game.players[1].score)
