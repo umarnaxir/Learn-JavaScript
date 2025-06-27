@@ -1,5 +1,4 @@
-//Data Structure
-
+//Data Structure 
 const users = [
   {name: 'wajahat', age: 23, active: true },
   {name: 'iqram', age: 24, active: true},
@@ -37,15 +36,24 @@ const students = [{
 console.log(students)
 
 const companies = [
-  {name:"harmukh", 
-   employes:["umar", "owais","khalid"]
+  {
+    name: "harmukh",
+    employees: [
+      { name: "umar", role: "Frontend Engineer" },
+      { name: "owais", role: "Backend Developer" },
+      { name: "khalid", role: "UI Designer" }
+    ]
   },
-    {name:"saibbyWeb", 
-   employes:["wajahat", "imran","iqram"]
+  {
+    name: "saibbyWeb",
+    employees: [
+      { name: "wajahat", role: "Team Lead" },
+      { name: "imran", role: "SEO Specialist" },
+      { name: "iqram", role: "Data Analyst" }
+    ]
   }
-]
+];
 console.log(companies)
-
 
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
