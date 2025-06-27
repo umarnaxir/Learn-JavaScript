@@ -1,3 +1,53 @@
+//Data Structure
+
+const users = [
+  {name: 'wajahat', age: 23, active: true },
+  {name: 'iqram', age: 24, active: true},
+  {name: 'imran', age: 25, active: true},
+  {name: 'owais', age: 26, active: false},
+  {name: 'umar', age: 27, active: false},
+]
+console.log(users)
+
+const products = [
+  {id:1, name:'MacBook', price: 150000, inStock: true},
+  {id:2, name:'Dell', price: 100000, inStock: true},
+  {id:3, name:'HP', price: 50000, inStock: false}
+]
+console.log(products)
+
+const library = {
+  name:"saibbyWeb",
+    books:[
+    {title:"JavaScript", author:"Wajahat", pageCount:200},
+    {title:"Python", author:"Imran", pageCount:300},
+    {title:"Java", author:"Iqram", pageCount:400},
+  ]
+}
+console.log(library)
+
+const students = [{
+  name: "umar",
+    score:[300,400,500]
+},
+{
+  name: "waseem",
+    score:[400,500,600],
+}]
+console.log(students)
+
+const companies = [
+  {name:"harmukh", 
+   employes:["umar", "owais","khalid"]
+  },
+    {name:"saibbyWeb", 
+   employes:["wajahat", "imran","iqram"]
+  }
+]
+console.log(companies)
+
+
+
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // for(let i = 0; i < numbers.length; i++){
 //     console.log(numbers[i])
