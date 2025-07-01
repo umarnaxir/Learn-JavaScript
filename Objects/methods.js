@@ -1,3 +1,4 @@
+//Object
 const person = {
     firstName: "Elon",
     lastName: "Musk",
@@ -23,3 +24,33 @@ user.firstName = "Umar";
 user.lastName = "Nazir";
 user.age = 24;
 console.log(user);
+
+//Object Methods
+const user1 = {
+    name:"Owais",
+    age:23,
+    email:"owais@123",
+    greet:()=> "Hello There!",
+}
+console.log(user1.greet());
+
+//This Keyword
+const user2 = {
+    firstName:"khalid",
+    age:24,
+    email:"khalid@123",
+    greet:function(){
+        return  console.log("Hello" + " " + this.firstName)
+
+    }
+}
+user2.greet();
+
+const user3 = {
+    firstName: "Amir",
+    lastName: "Nazir",
+    getFullName: function(){
+        return this.firstName + " " + this.lastName
+    }
+}
+console.log(user3.getFullName())
