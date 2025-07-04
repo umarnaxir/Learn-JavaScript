@@ -1,0 +1,74 @@
+✅ Summary Table of Array Methods
+
+
+| Method        | Description                   |
+| ------------- | ----------------------------- |
+| `push()`      | Add at end                    |
+| `pop()`       | Remove last                   |
+| `unshift()`   | Add at start                  |
+| `shift()`     | Remove first                  |
+| `map()`       | Create new array by modifying |
+| `filter()`    | Filter items by condition     |
+| `forEach()`   | Loop through items            |
+| `find()`      | Get first match               |
+| `findIndex()` | Index of first match          |
+| `includes()`  | Check existence               |
+| `some()`      | At least one passes           |
+| `every()`     | All must pass                 |
+| `reduce()`    | Reduce to single value        |
+| `sort()`      | Sort elements                 |
+| `reverse()`   | Reverse array                 |
+| `concat()`    | Merge arrays                  |
+| `join()`      | Join into string              |
+| `slice()`     | Extract portion               |
+| `splice()`    | Add/remove items              |
+
+
+✅ Summary Table of Object Methods
+
+| Method                         | Description                         |
+| ------------------------------ | ----------------------------------- |
+| `Object.keys()`                | Get array of keys                   |
+| `Object.values()`              | Get array of values                 |
+| `Object.entries()`             | Get array of key-value pairs        |
+| `Object.assign()`              | Merge/copy objects                  |
+| `Object.freeze()`              | Make object immutable               |
+| `Object.seal()`                | Prevent adding/removing properties  |
+| `Object.hasOwn()`              | Check if property exists (modern)   |
+| `hasOwnProperty()`             | Check property exists (traditional) |
+| `Object.fromEntries()`         | Convert key-value pairs into object |
+| `Object.is()`                  | Safer equality check                |
+| `Object.defineProperty()`      | Define property with control        |
+| `Object.getOwnPropertyNames()` | Get all property names              |
+| `Object.getPrototypeOf()`      | Get object's prototype              |
+
+
+✅ Summary Table of String Methods
+
+| Method            | Description                               |
+| ----------------- | ----------------------------------------- |
+| `length`          | Get string length                         |
+| `toUpperCase()`   | Convert to uppercase                      |
+| `toLowerCase()`   | Convert to lowercase                      |
+| `charAt()`        | Get character at index                    |
+| `indexOf()`       | Find index of first match                 |
+| `lastIndexOf()`   | Find index of last match                  |
+| `includes()`      | Check if substring exists                 |
+| `startsWith()`    | Check if string starts with a value       |
+| `endsWith()`      | Check if string ends with a value         |
+| `slice()`         | Extract part of string                    |
+| `substring()`     | Extract part (no negatives allowed)       |
+| `substr()`        | Extract part (start, length) — deprecated |
+| `replace()`       | Replace first match                       |
+| `replaceAll()`    | Replace all matches                       |
+| `split()`         | Split string into array                   |
+| `trim()`          | Remove whitespace both ends               |
+| `trimStart()`     | Remove start whitespace                   |
+| `trimEnd()`       | Remove end whitespace                     |
+| `repeat()`        | Repeat string                             |
+| `padStart()`      | Pad from start                            |
+| `padEnd()`        | Pad from end                              |
+| `localeCompare()` | Compare strings alphabetically            |
+| `match()`         | Match using regex                         |
+| `search()`        | Search using regex                        |
+| `toString()`      | Convert to string                         |
