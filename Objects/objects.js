@@ -196,3 +196,11 @@ console.log(person8)
 const a = Object.getOwnPropertyDescriptor(person8, "firstName");
 console.log(a.writable)
 console.log(a.value)
+
+//getOwnPropertyNames - return array of keys
+ const b = Object.getOwnPropertyNames(person8)
+ console.log(b)
+
+ //getPrototypeof  - shows which methods, attributes are used 
+ const c = 10;
+ console.log(Object.getPrototypeOf(c)) //number
