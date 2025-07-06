@@ -109,6 +109,7 @@ console.log(catItem);
 console.log(result);
 //General Methods End
 
+//Security perpose method
 //Prevent methods - Secure (can't add next property)
 const person4 = {
   firstName: "umar",
@@ -156,3 +157,20 @@ console.log(person7)
 
 //isFrozen - check is there any freeze method applied 
 console.log(Object.isFrozen(person7))
+//Security perpose method
+
+//single property method - security method
+//define property
+const person8 = {
+  firstName: "umar",
+  lastName: "nazir",
+  age:23
+};
+Object.defineProperty(person8, "mobile",
+  {value:23456678,
+    writable: false,
+    enumerable:true,
+    configurable:false,
+  });
+  person8.mobile = 1111112222
+console.log(person8);
