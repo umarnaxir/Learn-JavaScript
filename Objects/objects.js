@@ -142,3 +142,14 @@ console.log(person6)
 
 //isSealed - check is the seal method applied on the object or not if yes it return true
 console.log(Object.isSealed(person6))
+
+//Freeze - cant delete, add or change object
+const person7 = {
+  firstName: "Rayees",
+  lastName: "Ahmad"
+}
+Object.freeze(person7);
+person7.age = 23;
+delete person7.firstName;
+person7.firstName = "sameer";
+console.log(person7)
