@@ -41,3 +41,17 @@ const person2 = {
 }
 const newObj = Object.create(person2);
 console.log(newObj.firstName);
+
+//Keys
+const person3 = {
+  firstName: "Amir",
+  lastName: "Nazir",
+  age:22,
+  Email: "amir@123"
+}
+// const myKeys = Object.keys(person3)
+// console.log(mykeys);
+console.log(Object.keys(person3));
+
+//values
+console.log(Object.values(person3));
