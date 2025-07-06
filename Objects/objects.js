@@ -172,5 +172,27 @@ Object.defineProperty(person8, "mobile",
     enumerable:true,
     configurable:false,
   });
-  person8.mobile = 1111112222
+  person8.mobile = 1111112222 //cant change the number 
 console.log(person8);
+
+//Define Properties - can bulk of prperties or object
+Object.defineProperties(person8, {
+  mob: {
+    value: 123345,
+    writable:false,
+    enumerable: true,
+    configurable: false
+  },
+  address: {
+    value: "j&k",
+    writable:false,
+    enumerable: true,  // optional
+    configurable: true // optional
+  }
+});
+console.log(person8)
+
+//getOwnPropertyDescriptor - it checks is there any attribute is used or not
+const a = Object.getOwnPropertyDescriptor(person8, "firstName");
+console.log(a.writable)
+console.log(a.value)
