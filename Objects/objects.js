@@ -75,7 +75,27 @@
 
 // console.log(newEntry);
 
-//GroupBy - Looping (Grouping of data)
+// //GroupBy - Looping (Grouping of data)
+// const flipKart = [
+//   { productName: 'Redmi Note 7', category: 'mobile', price: 16000 },
+//   { productName: 'Phillips 001', category: 'TV', price: 22000 },
+//   { productName: 'MI Smart TV', category: 'LED', price: 35000 },
+//   { productName: 'Samsung Galaxy', category: 'mobile', price: 25000 },
+//   { productName: 'Elephent 005', category: 'Toy', price: 1499 },
+//   { productName: 'Nokia n1054', category: 'LED', price: 50000 },
+//   { productName: 'Sony', category: 'TV', price: 70000 },
+// ];
+
+// const result = Object.groupBy(flipKart, (item) => {
+//   if (item.price >= 25000) {
+//     return 'HighPriceProducts';
+//   } else {
+//     return 'LowPriceProducts';
+//   }
+// });
+
+// console.log(result);
+
 const flipKart = [
   { productName: 'Redmi Note 7', category: 'mobile', price: 16000 },
   { productName: 'Phillips 001', category: 'TV', price: 22000 },
@@ -86,12 +106,13 @@ const flipKart = [
   { productName: 'Sony', category: 'TV', price: 70000 },
 ];
 
-const result = Object.groupBy(flipKart, (item) => {
-  if (item.price >= 25000) {
-    return 'HighPriceProducts';
-  } else {
-    return 'LowPriceProducts';
-  }
+// Grouping by renamed category labels
+const catItem = Object.groupBy(flipKart, (item) => {
+  if (item.category === "LED") return "LedProducts";
+  if (item.category === "TV") return "TVProducts";
+  if (item.category === "mobile") return "MobileProducts";
+  if (item.category === "Toy") return "ToyProducts";
+  return item.category; // fallback if new category comes
 });
 
-console.log(result);
+console.log(catItem);
