@@ -153,3 +153,6 @@ person7.age = 23;
 delete person7.firstName;
 person7.firstName = "sameer";
 console.log(person7)
+
+//isFrozen - check is there any freeze method applied 
+console.log(Object.isFrozen(person7))
