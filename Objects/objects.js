@@ -33,3 +33,11 @@ const xyz = {
 console.log(person);
 Object.assign(person, xyz);
 console.log(person);
+
+//Create
+const person2 = {
+  firstName: "sameer",
+  age: 23
+}
+const newObj = Object.create(person2);
+console.log(newObj.firstName);
