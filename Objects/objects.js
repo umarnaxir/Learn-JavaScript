@@ -49,9 +49,28 @@ const person3 = {
   age:22,
   Email: "amir@123"
 }
-// const myKeys = Object.keys(person3)
-// console.log(mykeys);
+const myKeys = Object.keys(person3)
+console.log(myKeys);
 console.log(Object.keys(person3));
 
 //values
 console.log(Object.values(person3));
+
+//entries
+console.log(Object.entries(person3));
+
+//fromEntries - back to obj
+const newObj2 = Object.fromEntries(Object.entries(person3));
+console.log(newObj2);
+
+//Example 2
+const entries = [
+  ["firstName", "Amir"],
+  ["lastName", "Nazir"],
+  ["age", 22],
+  ["email", "amir@123"]
+];
+
+const newEntry = Object.fromEntries(entries);
+
+console.log(newEntry);
