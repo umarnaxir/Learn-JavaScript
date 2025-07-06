@@ -120,7 +120,7 @@ Object.preventExtensions(person4);
 person4.mob = 234545678;
 console.log(person4);
 
-//isExtensible
+//isExtensible - check is there any restrictions
 const person5 = {
   firstName: "Basit",
   lastName: "yousuf",
@@ -128,3 +128,14 @@ const person5 = {
 }
 const x = Object.isExtensible(person5)
 console.log(x);
+
+//seal - cant add or delete only can change
+const person6 = {
+  firstName: "Khalid",
+  lastName: "Jan",
+  age: 24
+}
+Object.seal(person6)
+person6.mob = 1234567890 //does not work bcz obj is sealed
+person6.age = 25;
+console.log(person6)
