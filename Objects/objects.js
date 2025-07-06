@@ -139,3 +139,6 @@ Object.seal(person6)
 person6.mob = 1234567890 //does not work bcz obj is sealed
 person6.age = 25;
 console.log(person6)
+
+//isSealed - check is the seal method applied on the object or not if yes it return true
+console.log(Object.isSealed(person6))
