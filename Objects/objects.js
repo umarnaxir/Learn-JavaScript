@@ -109,7 +109,7 @@ console.log(catItem);
 console.log(result);
 //General Methods End
 
-//Prevent methods - Secure 
+//Prevent methods - Secure (can't add next property)
 const person4 = {
   firstName: "umar",
   lastName: "nazir",
@@ -119,3 +119,12 @@ const person4 = {
 Object.preventExtensions(person4);
 person4.mob = 234545678;
 console.log(person4);
+
+//isExtensible
+const person5 = {
+  firstName: "Basit",
+  lastName: "yousuf",
+  age: 23
+}
+const x = Object.isExtensible(person5)
+console.log(x);
