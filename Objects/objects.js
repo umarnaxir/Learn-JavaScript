@@ -204,3 +204,5 @@ console.log(a.value)
  //getPrototypeof  - shows which methods, attributes are used 
  const c = 10;
  console.log(Object.getPrototypeOf(c)) //number
+
+ 
