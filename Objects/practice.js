@@ -1,285 +1,285 @@
-// //Data Structure
+//Data Structure
 
-// const users1 = [
-//   { name: "wajahat", age: 23, active: true },
-//   { name: "iqram", age: 24, active: true },
-//   { name: "imran", age: 25, active: true },
-//   { name: "owais", age: 26, active: false },
-//   { name: "umar", age: 27, active: false },
-// ];
-// const findUser = users.find((user) => !user.active);
-// console.log(findUser);
+const users1 = [
+  { name: "wajahat", age: 23, active: true },
+  { name: "iqram", age: 24, active: true },
+  { name: "imran", age: 25, active: true },
+  { name: "owais", age: 26, active: false },
+  { name: "umar", age: 27, active: false },
+];
+const findUser = users.find((user) => !user.active);
+console.log(findUser);
 
-// const products = [
-//   { id: 1, name: "MacBook", price: 150000, inStock: true },
-//   { id: 2, name: "Dell", price: 100000, inStock: true },
-//   { id: 3, name: "HP", price: 50000, inStock: false },
-// ];
-// const findProduct = products.find((product) => product.id === 3);
-// console.log(findProduct);
+const products = [
+  { id: 1, name: "MacBook", price: 150000, inStock: true },
+  { id: 2, name: "Dell", price: 100000, inStock: true },
+  { id: 3, name: "HP", price: 50000, inStock: false },
+];
+const findProduct = products.find((product) => product.id === 3);
+console.log(findProduct);
 
-// const library1 = {
-//   name: "saibbyWeb",
-//   books: [
-//     { title: "JavaScript", author: "Wajahat", pageCount: 200 },
-//     { title: "Python", author: "Imran", pageCount: 300 },
-//     { title: "Java", author: "Iqram", pageCount: 400 },
-//   ],
-// };
+const library1 = {
+  name: "saibbyWeb",
+  books: [
+    { title: "JavaScript", author: "Wajahat", pageCount: 200 },
+    { title: "Python", author: "Imran", pageCount: 300 },
+    { title: "Java", author: "Iqram", pageCount: 400 },
+  ],
+};
 
-// const findBook = library.books.find((book) => book.pageCount === 300);
-// console.log(findBook);
+const findBook = library.books.find((book) => book.pageCount === 300);
+console.log(findBook);
 
-// const students = [
-//   {
-//     name: "umar",
-//     score: [300, 400, 500],
-//   },
-//   {
-//     name: "waseem",
-//     score: [400, 500, 600],
-//   },
-// ];
-// const findStudent = students.find((student) => student.name === "waseem");
-// console.log(findStudent);
+const students = [
+  {
+    name: "umar",
+    score: [300, 400, 500],
+  },
+  {
+    name: "waseem",
+    score: [400, 500, 600],
+  },
+];
+const findStudent = students.find((student) => student.name === "waseem");
+console.log(findStudent);
 
-// const companies = [
-//   {
-//     name: "harmukh",
-//     employees: [
-//       { name: "umar", role: "Frontend" },
-//       { name: "owais", role: "Backend" },
-//       { name: "khalid", role: "UI Designer" },
-//     ],
-//   },
-//   {
-//     name: "saibbyWeb",
-//     employees: [
-//       { name: "Suhaib", role: "CEO" },
-//       { name: "wajahat", role: "SDE" },
-//       { name: "imran", role: "SDE" },
-//       { name: "iqram", role: "SDE" },
-//       { name: "umar", role: "Intern" },
-//       { name: "owais", role: "Intern" },
-//     ],
-//   },
-// ];
-// const findComp = companies.find((company) => company.employees.length > 5);
-// console.log(findComp);
+const companies = [
+  {
+    name: "harmukh",
+    employees: [
+      { name: "umar", role: "Frontend" },
+      { name: "owais", role: "Backend" },
+      { name: "khalid", role: "UI Designer" },
+    ],
+  },
+  {
+    name: "saibbyWeb",
+    employees: [
+      { name: "Suhaib", role: "CEO" },
+      { name: "wajahat", role: "SDE" },
+      { name: "imran", role: "SDE" },
+      { name: "iqram", role: "SDE" },
+      { name: "umar", role: "Intern" },
+      { name: "owais", role: "Intern" },
+    ],
+  },
+];
+const findComp = companies.find((company) => company.employees.length > 5);
+console.log(findComp);
 
-// // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// // for(let i = 0; i < numbers.length; i++){
-// //     console.log(numbers[i])
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for(let i = 0; i < numbers.length; i++){
+//     console.log(numbers[i])
 
-// // }
-
-// const person = [
-//   {
-//     name: "wajahat",
-//     age: 22,
-//   },
-//   {
-//     name: "iqram",
-//     age: 23,
-//   },
-//   {
-//     name: "imran",
-//     age: 24,
-//   },
-//   {
-//     name: "owais",
-//     age: 25,
-//   },
-//   {
-//     name: "umar",
-//     age: 26,
-//   },
-// ];
-
-// for (let i = 0; i < person.length; i++) {
-//   console.log(person[i].age);
-// }
-// console.log(person[0]);
-// console.log(person[4]);
-
-// for (i = 0; i < person.length; i++) {
-//   if ((i = 0)) {
-//     console.log(person[i]);
-//   }
 // }
 
-// //pop method
-// const persons = ["wajat", "iqram", "imran", "owais", "umar"];
-// const newArr = persons.pop();
-// // console.log(persons);
+const person = [
+  {
+    name: "wajahat",
+    age: 22,
+  },
+  {
+    name: "iqram",
+    age: 23,
+  },
+  {
+    name: "imran",
+    age: 24,
+  },
+  {
+    name: "owais",
+    age: 25,
+  },
+  {
+    name: "umar",
+    age: 26,
+  },
+];
 
-// //push method
-// const newArr1 = persons.push("shabaz");
-// // console.log(persons);
+for (let i = 0; i < person.length; i++) {
+  console.log(person[i].age);
+}
+console.log(person[0]);
+console.log(person[4]);
 
-// //shift method
-// const newArr2 = persons.shift();
+for (i = 0; i < person.length; i++) {
+  if ((i = 0)) {
+    console.log(person[i]);
+  }
+}
+
+//pop method
+const persons = ["wajat", "iqram", "imran", "owais", "umar"];
+const newArr = persons.pop();
 // console.log(persons);
 
-// const users = [
-//   {
-//     name: "wajahat",
-//     age: 22,
-//     email: "wahat@gmail.com",
-//   },
-//   {
-//     name: "iqram",
-//     age: 23,
-//     email: "iqram@gmail.com",
-//   },
-//   {
-//     name: "imran",
-//     age: 24,
-//     email: "imran@gmail.com",
-//   },
-//   {
-//     name: "shabaz",
-//     age: 25,
-//     email: "shanaz@gmail.com",
-//   },
-//   {
-//     name: "owais",
-//     age: 26,
-//     email: "owais@gmail.com",
-//   },
-//   {
-//     name: "umar",
-//     age: 23,
-//     email: "umar@gmail.com",
-//   },
-//   {
-//     name: "umar",
-//     age: 27,
-//     email: "umr@gmail.com",
-//   },
-// ];
-// const wajahat = users.find((name) => (name = wajahat));
-// console.log(users);
+//push method
+const newArr1 = persons.push("shabaz");
+// console.log(persons);
 
-// //How TO Access Objects and Arrays
-// const classroom = {
-//   students: [
-//     { name: "Ali", age: 20 },
-//     { name: "Umar", age: 22 },
-//   ],
-// };
-// // Print Umar's age
-// console.log(classroom.students[1].age);
+//shift method
+const newArr2 = persons.shift();
+console.log(persons);
 
-// const orders = [
-//   { id: 1, items: ["pen", "notebook"] },
-//   { id: 2, items: ["eraser", "scale"] },
-// ];
-// // Print the first item of the second order
-// console.log(orders[1].items[0]);
+const users = [
+  {
+    name: "wajahat",
+    age: 22,
+    email: "wahat@gmail.com",
+  },
+  {
+    name: "iqram",
+    age: 23,
+    email: "iqram@gmail.com",
+  },
+  {
+    name: "imran",
+    age: 24,
+    email: "imran@gmail.com",
+  },
+  {
+    name: "shabaz",
+    age: 25,
+    email: "shanaz@gmail.com",
+  },
+  {
+    name: "owais",
+    age: 26,
+    email: "owais@gmail.com",
+  },
+  {
+    name: "umar",
+    age: 23,
+    email: "umar@gmail.com",
+  },
+  {
+    name: "umar",
+    age: 27,
+    email: "umr@gmail.com",
+  },
+];
+const wajahat = users.find((name) => (name = wajahat));
+console.log(users);
 
-// const library = {
-//   section: {
-//     fiction: ["Book1", "Book2"],
-//     nonFiction: ["Book3", "Book4"],
-//   },
-// };
-// // Print Book3
-// console.log(library.section.nonFiction[0]);
+//How TO Access Objects and Arrays
+const classroom = {
+  students: [
+    { name: "Ali", age: 20 },
+    { name: "Umar", age: 22 },
+  ],
+};
+// Print Umar's age
+console.log(classroom.students[1].age);
 
-// const user = {
-//   name: "Sara",
-//   posts: [
-//     { title: "First Post", likes: 15 },
-//     { title: "Second Post", likes: 30 },
-//   ],
-// };
-// // Print the title of the second post
-// console.log(user.posts[1].title);
+const orders = [
+  { id: 1, items: ["pen", "notebook"] },
+  { id: 2, items: ["eraser", "scale"] },
+];
+// Print the first item of the second order
+console.log(orders[1].items[0]);
 
-// const cart = [
-//   {
-//     product: "Mouse",
-//     details: {
-//       price: 500,
-//       quantity: 2,
-//     },
-//   },
-//   {
-//     product: "Keyboard",
-//     details: {
-//       price: 800,
-//       quantity: 1,
-//     },
-//   },
-// ];
-// // Print the quantity of Keyboard
-// console.log(cart[1].details.quantity);
+const library = {
+  section: {
+    fiction: ["Book1", "Book2"],
+    nonFiction: ["Book3", "Book4"],
+  },
+};
+// Print Book3
+console.log(library.section.nonFiction[0]);
 
-// const profile = {
-//   name: "Zara",
-//   contact: {
-//     email: "zara@example.com",
-//     address: {
-//       city: "Delhi",
-//       pincode: 110001,
-//     },
-//   },
-// };
-// // Print the pincode
-// console.log(profile.contact.address.pincode);
+const user = {
+  name: "Sara",
+  posts: [
+    { title: "First Post", likes: 15 },
+    { title: "Second Post", likes: 30 },
+  ],
+};
+// Print the title of the second post
+console.log(user.posts[1].title);
 
-// const playlist = [
-//   {
-//     name: "Favorites",
-//     songs: ["Song A", "Song B", "Song C"],
-//   },
-//   {
-//     name: "Workout",
-//     songs: ["Song X", "Song Y"],
-//   },
-// ];
-// // Print "Song Y"
-// console.log(playlist[1].songs[1]);
+const cart = [
+  {
+    product: "Mouse",
+    details: {
+      price: 500,
+      quantity: 2,
+    },
+  },
+  {
+    product: "Keyboard",
+    details: {
+      price: 800,
+      quantity: 1,
+    },
+  },
+];
+// Print the quantity of Keyboard
+console.log(cart[1].details.quantity);
 
-// const device = {
-//   type: "Mobile",
-//   specs: {
-//     os: "Android",
-//     features: {
-//       bluetooth: true,
-//       wifi: true,
-//     },
-//   },
-// };
-// // Print whether it supports bluetooth
-// console.log(device.specs.features.bluetooth);
+const profile = {
+  name: "Zara",
+  contact: {
+    email: "zara@example.com",
+    address: {
+      city: "Delhi",
+      pincode: 110001,
+    },
+  },
+};
+// Print the pincode
+console.log(profile.contact.address.pincode);
 
-// const travel = [
-//   {
-//     country: "India",
-//     cities: ["Delhi", "Mumbai", "Srinagar"],
-//   },
-//   {
-//     country: "USA",
-//     cities: ["New York", "Los Angeles"],
-//   },
-// ];
-// // Print the third city of India
-// console.log(travel[0].cities[2]);
+const playlist = [
+  {
+    name: "Favorites",
+    songs: ["Song A", "Song B", "Song C"],
+  },
+  {
+    name: "Workout",
+    songs: ["Song X", "Song Y"],
+  },
+];
+// Print "Song Y"
+console.log(playlist[1].songs[1]);
 
-// const game = {
-//   title: "Chess",
-//   players: [
-//     {
-//       name: "Player1",
-//       score: 120,
-//     },
-//     {
-//       name: "Player2",
-//       score: 130,
-//     },
-//   ],
-// };
-// // Print Player2's score
-// console.log(game.players[1].score);
+const device = {
+  type: "Mobile",
+  specs: {
+    os: "Android",
+    features: {
+      bluetooth: true,
+      wifi: true,
+    },
+  },
+};
+// Print whether it supports bluetooth
+console.log(device.specs.features.bluetooth);
+
+const travel = [
+  {
+    country: "India",
+    cities: ["Delhi", "Mumbai", "Srinagar"],
+  },
+  {
+    country: "USA",
+    cities: ["New York", "Los Angeles"],
+  },
+];
+// Print the third city of India
+console.log(travel[0].cities[2]);
+
+const game = {
+  title: "Chess",
+  players: [
+    {
+      name: "Player1",
+      score: 120,
+    },
+    {
+      name: "Player2",
+      score: 130,
+    },
+  ],
+};
+// Print Player2's score
+console.log(game.players[1].score);
